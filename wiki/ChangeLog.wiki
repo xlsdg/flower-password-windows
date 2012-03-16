@@ -1,4 +1,4 @@
-#labels Phase-Requirements,Featured
+#labels 更新日志
  * *v2.0 build 20120315*
 
   # 无主窗体模式，启动时自动最小化到托盘，在需要输入密码的地方，按快捷键ALT+W呼出输入窗体；
