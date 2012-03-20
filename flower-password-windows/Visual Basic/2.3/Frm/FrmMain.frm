@@ -256,7 +256,7 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
 
-Private Sub ComKey_Change()
+Private Sub comKey_Click()
 
     If Len(comKey.Text) > 0 And Len(txtPassword.Text) > 0 Then
         txtCode16.Text = getFlowerPassword(txtPassword.Text, comKey.Text + txtUser.Text, 16)
