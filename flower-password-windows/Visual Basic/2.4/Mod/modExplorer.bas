@@ -130,3 +130,31 @@ Public Function GetWebsiteName(ByVal strUrl As String) As String
     GetWebsiteName = strUrl
 
 End Function
+
+Public Function isClipAsUrl() As String
+
+    If Clipboard.GetFormat(vbCFText) Then
+
+        Dim strUrl As String
+
+        strUrl = Clipboard.GetText
+
+        If Len(strUrl) > 0 Then
+            If LCase$(Left$(strUrl, Len("http://"))) = LCase$("http://") Or LCase$(Left$(strUrl, Len("www."))) = LCase$("www.") Then
+                isClipAsUrl = GetWebsiteName(strUrl)
+            Else
+                isClipAsUrl = ""
+
+            End If
+
+        Else
+            isClipAsUrl = ""
+
+        End If
+
+    Else
+        isClipAsUrl = ""
+
+    End If
+
+End Function

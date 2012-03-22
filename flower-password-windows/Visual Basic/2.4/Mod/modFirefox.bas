@@ -8,7 +8,7 @@ Private Declare Function GetClassName _
                                        ByVal nMaxCount As Long) As Long
 
 Public Function GetFirefoxDomainName(ByVal hwnd As Long) As String
-    GetFirefoxDomainName = "" 'GetWebsiteName(vbNullString)
+    GetFirefoxDomainName = isClipAsUrl() 'GetWebsiteName(vbNullString)
 
 End Function
 
