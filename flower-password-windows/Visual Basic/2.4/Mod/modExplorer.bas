@@ -82,14 +82,14 @@ Public Function FilterDomainName(ByVal Str_DomainName As String) As String
 
     For x = LBound(Arr_Ext) To UBound(Arr_Ext)
 
-        Dim Arr_len As Long, Str_len As Long
+        Dim Arr_len As Long, str_len As Long
 
         Arr_len = Len(Arr_Ext(x))
-        Str_len = Len(Str_DomainName)
+        str_len = Len(Str_DomainName)
 
-        If Right$(Str_DomainName, Arr_len) = Arr_Ext(x) And Str_len > Arr_len Then
-            Str_DomainName = Left$(Str_DomainName, Str_len - Arr_len)
-            Str_len = Len(Str_DomainName)
+        If Right$(Str_DomainName, Arr_len) = Arr_Ext(x) And str_len > Arr_len Then
+            Str_DomainName = Left$(Str_DomainName, str_len - Arr_len)
+            str_len = Len(Str_DomainName)
 
             Dim v As Integer
 
@@ -98,7 +98,7 @@ Public Function FilterDomainName(ByVal Str_DomainName As String) As String
             If v = 0 Then
                 FilterDomainName = Str_DomainName
             Else
-                FilterDomainName = Right$(Str_DomainName, Str_len - v)
+                FilterDomainName = Right$(Str_DomainName, str_len - v)
 
             End If
 
@@ -131,29 +131,48 @@ Public Function GetWebsiteName(ByVal strUrl As String) As String
 
 End Function
 
-Public Function isClipAsUrl() As String
+Public Function isClipboardAsUrl() As String
 
     If Clipboard.GetFormat(vbCFText) Then
 
-        Dim strUrl As String
+        Dim str_url As String, str_len As Long
 
-        strUrl = Clipboard.GetText
+        str_url = LCase$(Clipboard.GetText)
+        str_len = Len(str_url)
 
-        If Len(strUrl) > 0 Then
-            If LCase$(Left$(strUrl, Len("http://"))) = LCase$("http://") Or LCase$(Left$(strUrl, Len("www."))) = LCase$("www.") Then
-                isClipAsUrl = GetWebsiteName(strUrl)
-            Else
-                isClipAsUrl = ""
+        If str_len > 0 Then
+            isClipboardAsUrl = ""
 
-            End If
+            Dim Str_Sites As String
 
+            Str_Sites = LCase$("http|https|ftp|mms|rtsp|rtmp|mmst|bt|www.|wap.|m.|3g.")
+
+            Dim Arr_Ext() As String
+
+            Arr_Ext = Split(Str_Sites, "|")
+
+            Dim x As Integer
+
+            For x = LBound(Arr_Ext) To UBound(Arr_Ext)
+
+                Dim Arr_len As Long
+
+                Arr_len = Len(Arr_Ext(x))
+
+                If Left$(str_url, Arr_len) = Arr_Ext(x) And str_len > Arr_len Then
+                    isClipboardAsUrl = GetWebsiteName(str_url)
+                    Exit For
+
+                End If
+
+            Next
         Else
-            isClipAsUrl = ""
+            isClipboardAsUrl = ""
 
         End If
 
     Else
-        isClipAsUrl = ""
+        isClipboardAsUrl = ""
 
     End If
 

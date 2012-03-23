@@ -8,7 +8,7 @@ Private Declare Function GetClassName _
                                        ByVal nMaxCount As Long) As Long
 
 Public Function GetOperaDomainName(ByVal hwnd As Long) As String
-    GetOperaDomainName = isClipAsUrl() 'GetWebsiteName(vbNullString)
+    GetOperaDomainName = isClipboardAsUrl() 'GetWebsiteName(vbNullString)
 
 End Function
 

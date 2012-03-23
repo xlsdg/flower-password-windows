@@ -31,6 +31,6 @@ Public Function isMaxthon(ByVal WinWnd As Long) As Boolean
 End Function
 
 Public Function GetMaxthonDomainName(ByVal hwnd As Long) As String
-    GetMaxthonDomainName = isClipAsUrl() 'GetWebsiteName(vbNullString)
+    GetMaxthonDomainName = isClipboardAsUrl() 'GetWebsiteName(vbNullString)
 
 End Function
