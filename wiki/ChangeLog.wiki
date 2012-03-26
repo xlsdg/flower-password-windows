@@ -1,4 +1,4 @@
-#labels 更新日志
+#labels Featured
  * *v2.4 build 20120322* 
 
  # 添加Chrome浏览器的支持，自动填充区分代号；
