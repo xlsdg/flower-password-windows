@@ -24,7 +24,6 @@ Public Function SetFormRgn() As Long
 End Function
 
 Public Function UnSetFormRgn() As Long
-    MsgBox outrgn
     UnSetFormRgn = DeleteObject(outrgn) '将圆角区域使用的所有系统资源释放
 
 End Function
