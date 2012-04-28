@@ -1,0 +1,9 @@
+@JohnnyJian @KiseXu @Kenshin 
+
+v2.9 beta 4 build 20120426
+
+增加“在花密主面板显示生成的十六位密码”开关选项；
+设置窗体添加“恢复默认设置”功能；
+修正记忆密码输入框提示缓慢消失造成密码遮挡问题；
+
+下载地址：http://flower-password-windows.googlecode.com/files/FlowerPassword_2.9_beta4.zip
