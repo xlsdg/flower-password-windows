@@ -1,9 +1,40 @@
 @JohnnyJian @KiseXu @Kenshin 
 
-v2.9 beta 4 build 20120426
+v2.9 beta 4 build 20120426 
 
 增加“在花密主面板显示生成的十六位密码”开关选项；
 设置窗体添加“恢复默认设置”功能；
-修正记忆密码输入框提示缓慢消失造成密码遮挡问题；
+修正记忆密码输入框提示缓慢消失造成密码遮挡问题； 
 
-下载地址：http://flower-password-windows.googlecode.com/files/FlowerPassword_2.9_beta4.zip
+下载地址：http://flower-password-windows.googlecode.com/files/FlowerPassword_v2.9_beta4.zip
+
+v2.9 beta 3 build 20120413 
+
+调整附加扰码快捷开关至区分代号下方，减少鼠标移动操作距离，并修改标题为“附加扰码”；
+将数据库释放位置由原先的与花密同目录改为系统TEMP目录，解决某些特殊环境对程序读写权限的限制问题；
+修改白色设置窗口背景为系统原色调；
+修复在中文操作系统中，花密放置桌面打不开的错误；
+修正花密主面板隐藏后，当前焦点不在输入框上的问题； 
+
+下载地址：http://flower-password-windows.googlecode.com/files/FlowerPassword_v2.9_beta3.zip
+
+v2.9 beta 2 build 20120412 
+
+将花密主面板英文字符串元素全部替换为中文；
+设置窗口独立化，采用原生系统风格，所有功能选项开关化，可以单独设置；
+增加花密主面板的附加扰码快捷开关支持TAB键停留操作，调整其所在主面板位置；
+增加花密主面板半透明度效果；
+修改白色设置窗口背景为系统原色调；
+修复附加扰码输入框选项关闭时，鼠标点击导致花密退出的错误；
+修正HSIMP密码强度检测算法错误，与Chrome插件版一致； 
+
+下载地址：http://flower-password-windows.googlecode.com/files/FlowerPassword_v2.9_beta2.zip
+
+v2.9 beta 1 build 20120411 
+
+去除1.2版主界面，只使用花密插件窗口，增加用户体验一致性；
+对设置界面重新布局，增加启动时自动最小化选项和自动识别剪贴板网址选项；
+增加关闭设置界面时，会询问用户是否保存所做的更改；
+增加关闭插件窗口时，询问用户是否退出或最小化至托盘并提示是否记住用户的选择； 
+
+下载地址：http://flower-password-windows.googlecode.com/files/FlowerPassword_v2.9_beta1.zip
