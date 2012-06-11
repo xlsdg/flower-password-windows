@@ -1,0 +1,38 @@
+一：Trident内核
+
+    常见 Trident 内核浏览器
+
+        Internet Explorer 8 浏览器    Internet Explorer 9 浏览器    Internet Explorer 10 浏览器  傲游浏览器 2    世界之窗浏览器    360安全浏览器  腾讯TT浏览器  GreenBrowser浏览器  Avant Browser Lite  闪游浏览器  糖果浏览器
+
+    其他 Trident 内核浏览器
+
+        瑞影浏览器  115浏览器  155浏览器  瑞星安全浏览器  飞腾浏览器  速达浏览器  slim browser  N氧化碳浏览器  行者无疆浏览器  114高速浏览器  佐罗浏览器
+
+二：Webkit、Chromium内核
+
+    常见基于Chromium的单核浏览器
+
+        Chrome 浏览器    Chromium 浏览器    SRWare Iron    Comodo Dragon
+
+    常见基于 Webkit 的浏览器
+
+        safari    傲游浏览器 3    QupZilla 浏览器
+
+    国内Trident与Chromium双核浏览器
+
+        搜狗浏览器    360极速浏览器    QQ浏览器    枫树浏览器    世界之窗极速版  快快浏览器    阿里云浏览器    百度浏览器  云游浏览器
+
+三：Gecko内核
+
+    常见 Gecko 内核浏览器
+
+        Mozilla Firefox 浏览器    Firefox Aurora    Pale Moon 浏览器    Waterfox 水狐浏览器
+
+    常见 Gecko、Trident等内核浏览器
+
+        Avant Browser 2012 双核浏览器  Avant Browser Ultimate 2012 三核浏览器  神马双核浏览器  lunascape 三核浏览器
+
+四：Presto内核
+
+    Opera 浏览器    Opera Next 浏览器
+ 
